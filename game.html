@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="score-board">
+        <div id="num1">0</div>
+        <div> - </div>
+        <div id="num2">0</div>
+    </div>
+    <div id="content">
+        <div id="you">
+            <div class="your">You</div>
+            <div id="hand">
+                <img height="240px" src="assets/paper-hand.png" alt="" id="paperhand">
+            </div>
+            <div id="left">
+                    <img width="80" height="80" src="https://github.com/gitsibi/rock-paper-scissors-boilerplate/blob/main/assets/rock-logo.png?raw=true" alt="" id="rock" class="buttons" />
+                    <img width="80" height="80" src="https://github.com/gitsibi/rock-paper-scissors-boilerplate/blob/main/assets/paper-logo.png?raw=true" alt="" id="paper" class="buttons" />
+                    <img width="80" height="80" src="https://github.com/gitsibi/rock-paper-scissors-boilerplate/blob/main/assets/scissors-logo.png?raw=true" alt="" id="scissors" class="buttons"/>
+
+            </div>
+        </div>
+
+        <div class="versus">
+        <img  height="400px" src="https://github.com/gitsibi/rock-paper-scissors-boilerplate/blob/main/assets/vs.png?raw=true" alt="">
+       </div>
+
+       <div id="computer">
+        <div class="computers">comp</div>
+        <div id="hand2">
+            <img height="240px" src="https://github.com/gitsibi/rock-paper-scissors-boilerplate/blob/main/assets/paper-hand.png?raw=true" alt="" id="paperhand2">
+        </div>
+    </div>
+</div>
+    
+<div class="footer">
+    <h2 id="won">You <span id="wons"></span> the game</h2>
+    <div class="button">
+        <button type="button" id="playagain">Play Again</button>
+    </div>
+</div>
+<script src="./game.js"></script>
+
+</body>
+</html>
