@@ -1,0 +1,55 @@
+C++ Code:
+-------------
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int playerScore = 0;
+    int compScore = 0;
+    int winScore = 5;
+
+    while (playerScore < winScore && compScore < winScore) {
+        int operators = rand() % 3;
+        int playerChoice;
+        cout << "Enter your choice(1 for rock,2 for paper,3 for scissor): ";
+        cin >> playerChoice;
+
+        string compChoice;
+        if (operators == 2)
+            compChoice = "rock";
+        else if (operators == 0)
+            compChoice = "scissors";
+        else if (operators == 1)
+            compChoice = "paper";
+
+        cout << "Player's choice: " << playerChoice << endl;
+        cout << "Computer's choice: " << compChoice << endl;
+
+        if (playerChoice == 1 && compChoice == "scissors" ||
+            playerChoice == 2 && compChoice == "rock" ||
+            playerChoice == 3 && compChoice == "paper") 
+        {
+            playerScore++;
+        }
+        else if (playerChoice == 1 && compChoice == "paper" ||
+                 playerChoice == 2 && compChoice == "scissors" ||
+                 playerChoice == 3 && compChoice == "rock") 
+        {
+            compScore++;
+        }
+
+        cout << "Player's score: " << playerScore << endl;
+        cout << "Computer's score: " << compScore << endl;
+
+        if (playerScore == winScore) 
+        {
+            cout << "Congratulations! You won the game!"<<endl;
+        } 
+        else if (compScore == winScore) 
+        {
+           cout << "Computer won the game.Better luck next time!"<<endl;
+        }
+    }
+    return 0;
+}
